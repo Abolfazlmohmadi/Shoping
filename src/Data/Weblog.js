@@ -1,4 +1,4 @@
-import Sahat from "../assets/Image/Slide/Weblogg.webp";
+import Sahat from "../assets/Image/Slide/weblogg.webp";
 
 const products = [
   {
