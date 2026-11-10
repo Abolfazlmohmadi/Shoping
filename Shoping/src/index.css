@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: Vazir;
+  src: url("./assets/font/ttf/Vazirmatn-Bold.ttf");
+}
+@font-face {
+  font-family: Dana;
+  src: url("./assets/font/DanaDana--undefined\ \(1\).woff");
+}
+
+body {
+  font-family: Dana !important;
+  background-color: #f8fafc;
+}
+
+.drl {
+  direction: ltr;
+}
+
+.nav {
+  font-family: Vazir;
+}
+
+.nav-drop {
+  font-family: Dana;
+}
+.Hide {
+  display: none;
+}
+.msk:hover .Hide {
+  display: block;
+}
+
+.items:hover .grp {
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: visible !important;
+}
+
+.itemSecend:hover .grpSecend {
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: visible !important;
+}
+.itemSecend:hover .sbg-muno {
+  opacity: 1 !important;
+}
+
+@media (max-width: 640px) {
+  footer {
+    text-align: center;
+  }
+}

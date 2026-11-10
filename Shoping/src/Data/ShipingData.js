@@ -1,0 +1,66 @@
+import bbg from "../assets/Image/Slide/Phone.webp";
+
+const products = [
+  {
+    id: 1,
+    name: "سامسونگ گلکسی S24",
+    category: "موبایل",
+    image: bbg,
+    price: 35000000,
+    discount: 15,
+    quantity: 12,
+    inStock: false,
+  },
+  {
+    id: 2,
+    name: "اپل آیفون 15 پرو مکس",
+    category: "موبایل",
+    image: bbg,
+    price: 58000000,
+    discount: 10,
+    quantity: 0,
+    inStock: false,
+  },
+  {
+    id: 3,
+    name: "تبلت سامسونگ گلکسی ",
+    category: "تبلت",
+    image: bbg,
+    price: 22000000,
+    discount: 20,
+    quantity: 8,
+    inStock: true,
+  },
+  {
+    id: 4,
+    name: "تبلت اپل آیپد پرو 12.9",
+    category: "تبلت",
+    image: bbg,
+    price: 45000000,
+    discount: 5,
+    quantity: 3,
+    inStock: true,
+  },
+  {
+    id: 5,
+    name: "لپ‌تاپ ایسوس زنبوک 14",
+    category: "لپ‌تاپ",
+    image: bbg,
+    price: 42000000,
+    discount: 12,
+    quantity: 5,
+    inStock: true,
+  },
+  {
+    id: 6,
+    name: "لپ‌تاپ مک‌بوک ایر M2",
+    category: "لپ‌تاپ",
+    image: bbg,
+    price: 52000000,
+    discount: 3,
+    quantity: 0,
+    inStock: false,
+  },
+];
+
+export default products;

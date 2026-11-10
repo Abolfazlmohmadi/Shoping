@@ -1,0 +1,25 @@
+.comments-swiper .swiper-button-next,
+.comments-swiper .swiper-button-prev {
+  display: none;
+}
+
+.comments-swiper .swiper-slide {
+  height: auto;
+}
+
+.comments-swiper .swiper-pagination-bullet {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .comments-swiper .swiper-button-next,
+  .comments-swiper .swiper-button-prev {
+    width: 36px;
+    height: 36px;
+  }
+
+  .comments-swiper .swiper-button-next::after,
+  .comments-swiper .swiper-button-prev::after {
+    font-size: 1rem;
+  }
+}

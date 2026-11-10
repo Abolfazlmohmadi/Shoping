@@ -1,0 +1,66 @@
+import Laptop from "../assets/Image/Slide/Laptop.webp";
+
+const newProducts = [
+  {
+    id: 1,
+    name: "هواوی میت 60 پرو",
+    category: "موبایل",
+    image: Laptop,
+    price: 35000000,
+    discount: 15,
+    quantity: 12,
+    inStock: false,
+  },
+  {
+    id: 2,
+    name: "شیائومی 14 اولترا",
+    category: "موبایل",
+    image: Laptop,
+    price: 58000000,
+    discount: 10,
+    quantity: 0,
+    inStock: false,
+  },
+  {
+    id: 3,
+    name: "تبلت هواوی میت‌پد پرو",
+    category: "تبلت",
+    image: Laptop,
+    price: 22000000,
+    discount: 20,
+    quantity: 8,
+    inStock: true,
+  },
+  {
+    id: 4,
+    name: "تبلت شیائومی پد 6",
+    category: "تبلت",
+    image: Laptop,
+    price: 45000000,
+    discount: 5,
+    quantity: 3,
+    inStock: true,
+  },
+  {
+    id: 5,
+    name: "لپ‌تاپ لنوو ThinkPad X1",
+    category: "لپ‌تاپ",
+    image: Laptop,
+    price: 42000000,
+    discount: 12,
+    quantity: 5,
+    inStock: true,
+  },
+  {
+    id: 6,
+    name: "لپ‌تاپ دل ایکس‌پی‌اس 13",
+    category: "لپ‌تاپ",
+    image: Laptop,
+    price: 52000000,
+    discount: 3,
+    quantity: 0,
+    inStock: false,
+  },
+];
+
+export default newProducts;
