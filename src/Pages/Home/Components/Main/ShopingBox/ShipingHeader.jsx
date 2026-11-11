@@ -63,8 +63,8 @@ function ShipingHeader() {
 
       <div>
         <div className="mt-45 flex items-center justify-between">
-          <p className="font-bold text-2xl max-md:text-xl">محصولات ویژه</p>
-          <p className="text-violet-500 font-bold max-md:text-[13px]">
+          <p className="font-bold text-2xl max-md:text-xl ">محصولات ویژه</p>
+          <p className="text-violet-500 font-bold max-md:text-[13px] cursor-pointer">
             مشاهده همه
           </p>
         </div>
@@ -129,8 +129,12 @@ function ShipingHeader() {
                   </p>
                   <p
                     onClick={() => {
-                      addToCart(items);
-                      toast.success("کالا به سبد خرید شما اضافه شد");
+                      if (items.inStock === true) {
+                        addToCart(items);
+                        toast.success("کالا به سبد خرید شما اضافه شد");
+                      } else {
+                        toast.error("متاسفانه این کالا ناموجود می باشد");
+                      }
                     }}
                     className="font-bold text-violet-600 border border-violet-800 py-1 px-2.5 rounded-md cursor-pointer hover:bg-[color-mix(in_oklab,#8B5ACB_10%,transparent)] hover:text-[#8B5ACB] transition"
                   >

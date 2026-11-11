@@ -16,6 +16,7 @@
     "keen-slider": "^6.8.6",
     "lucide-react": "^1.26.0",
     "memoize": "^11.0.0",
+    "motion": "^14.12.0",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
     "react-hot-toast": "^2.6.0",

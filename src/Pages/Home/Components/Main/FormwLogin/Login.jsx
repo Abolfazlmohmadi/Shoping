@@ -49,7 +49,6 @@ export default function NovinStoreLogin() {
         toastOptions={{
           duration: 3000,
           style: {
-            fontFamily: "'Vazirmatn', 'Tahoma', sans-serif",
             background: "#FFFFFF",
             color: "#1E293B",
             borderRadius: "12px",

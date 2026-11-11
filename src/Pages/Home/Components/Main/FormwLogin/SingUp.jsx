@@ -9,7 +9,7 @@ import {
 } from "react-icons/fi";
 import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import toast, { Toaster } from "react-hot-toast";
 
 export default function NovinStoreSignup() {
@@ -20,6 +20,7 @@ export default function NovinStoreSignup() {
   const [phone, setPhone] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const navigate = useNavigate();
 
   // تابع ثبت‌نام
   const handleSignup = () => {
@@ -62,6 +63,10 @@ export default function NovinStoreSignup() {
     // ۶. موفقیت
     toast.success("حساب کاربری با موفقیت ساخته شد!");
 
+    setTimeout(() => {
+      navigate("/");
+    }, 3000);
+
     // ۷. خالی کردن فیلدها
     setFullName("");
     setPhone("");
@@ -76,7 +81,7 @@ export default function NovinStoreSignup() {
         position="top-center"
         reverseOrder={false}
         toastOptions={{
-          duration: 3000,
+          duration: 1000,
           style: {
             background: "#FFFFFF",
             color: "#1E293B",
