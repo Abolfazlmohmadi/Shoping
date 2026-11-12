@@ -15,22 +15,9 @@ function Main() {
       <div className="p-5">
         <PanelCategory />
         <div>
-          <motion.div
-            initial={{ opacity: 0, y: 150 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <Shiping />
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 150 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <Brand />
-          </motion.div>
+          <Shiping />
+
+          <Brand />
           <motion.div
             initial={{ opacity: 0, y: 150 }}
             whileInView={{ opacity: 1, y: 0 }}

@@ -1,0 +1,15 @@
+.blur-image {
+  filter: blur(20px);
+  opacity: 0.6;
+  transform: scale(1.05);
+  transition:
+    filter 1s ease,
+    opacity 1s ease,
+    transform 1s ease;
+}
+
+.blur-image.loaded {
+  filter: blur(0);
+  opacity: 1;
+  transform: scale(1);
+}

@@ -5,6 +5,7 @@ import toast, { Toaster } from "react-hot-toast";
 
 import ShopData from "../../../../../Data/ShipingData";
 import { CartContext } from "../../../../../Context/CartContext";
+import BlurImage from "../../BlurImage/BlurImage";
 
 function ShipingHeader() {
   const [activeTab, setActiveTab] = useState("ویژه");
@@ -99,12 +100,13 @@ function ShipingHeader() {
             >
               <div className="relative w-44">
                 {" "}
-                <img
+                {/* <img
                   src={items.image}
                   alt=""
                   className="w-full h-auto"
                   loading="lazy"
-                />
+                /> */}
+                <BlurImage src={items.image} alt={items.name} />
                 <div className="absolute top-2.75 right-31.75 bg-violet-500 px-1 py-0.5 rounded text-white text-sm">
                   {items.discount}%-
                 </div>
